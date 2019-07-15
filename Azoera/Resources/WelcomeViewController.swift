@@ -9,22 +9,30 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
+    
+    @IBOutlet weak var helpButton: UIButton!
+    @IBOutlet weak var faqButton: UIButton!
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var logInLabel: UIButton!
+    @IBOutlet weak var signUpLabel: UIButton!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passWordTextField: UITextField!
+    @IBOutlet weak var confirmPassworrdTextField: UITextField!
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var directionsLabel: UILabel!
+    @IBOutlet weak var signMeUpButtonLabel: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setUpViews()
+       
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setUpViews() {
+        signUpLabel.rotate()
+        logInLabel.rotate()
+        
     }
-    */
+    
 
 }
